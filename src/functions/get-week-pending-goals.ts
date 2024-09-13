@@ -2,8 +2,6 @@ import dayjs from 'dayjs'
 import { db } from '../db'
 import { goalCompletions, goals } from '../db/schema'
 import { and, gte, lte, count, eq, sql } from 'drizzle-orm'
-import { number } from 'zod'
-import { numeric } from 'drizzle-orm/pg-core'
 
 // gte - Greater Than or Equal
 // lte - Lower Than or Equal
@@ -53,7 +51,7 @@ export async function getWeekPendingGoals() {
       desiredWeeklyFrequency: goalsCreatedUpToWeek.desiredWeeklyFrequency,
       completionCount:
         sql`COALESCE(${goalCompletionCount.completionCount}, 0)`.mapWith(
-          numeric
+          Number
         ),
     })
     .from(goalsCreatedUpToWeek)
