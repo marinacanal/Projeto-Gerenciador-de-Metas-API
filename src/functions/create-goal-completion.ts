@@ -45,7 +45,7 @@ export async function createGoalCompletion({
     .where(eq(goals.id, goalId))
     .limit(1)
 
-  // instancia com o primeiro valor encontrado
+  // inicia com o primeiro valor encontrado
   const { completionCount, desiredWeeklyFrequency } = result[0]
 
   if (completionCount >= desiredWeeklyFrequency) {
@@ -57,9 +57,7 @@ export async function createGoalCompletion({
     .values({ goalId })
     .returning()
 
-  const goalCompletion = insertResult[0]
-
   return {
-    goalCompletion,
+    goalCompletion: insertResult[0],
   }
 }
