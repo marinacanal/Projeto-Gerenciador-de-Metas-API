@@ -34,7 +34,7 @@ Esse é um projeto que ajuda a gerenciar suas metas pessoais de forma simples e 
         📊 Confira o resumo semanal.
         
 
-## 🚧 O Que Está em Andamento
+## 🚧 Em Andamento
 ### Frontend
     Funcionalidade:
       ➕ Adicione novas metas facilmente.
