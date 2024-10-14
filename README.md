@@ -6,7 +6,6 @@ Esse é um projeto que ajuda a gerenciar suas metas pessoais de forma simples e 
 
     Node.js: 🟩 Ambiente de execução para JavaScript no lado do servidor.
     TypeScript: 🟨 Superset do JavaScript, com tipagem estática para maior segurança.
-    Express.js: 🖥 Framework minimalista para construir APIs.
 
 ### Frontend
 
