@@ -9,8 +9,31 @@ import {
 } from './ui/radio-group'
 import { Button } from './ui/button'
 import { X } from 'lucide-react'
+import { z } from 'zod'
+import { useQueryClient } from '@tanstack/react-query'
+
+// define um esquema de validaca
+const createGoalSchema = z.object({
+  title: z.string().min(1, 'Informe a atividade que deseja praticar'),
+  desiredWeeklyFrequency: z.coerce.number().min(1).max(7), // z.coerce.number() forca a entrada ser numerica
+})
+
+// define um tipo typescript baseado em createGoalSchema
+type CreateGoalSchema = z.infer<typeof createGoalSchema>
 
 export function CreateGoal() {
+  const queryClient = useQueryClient()
+
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  //   control,
+  //   reset,
+  // } = useForm<CreateGoalSchema>({
+  //   resolver: zodResolver(createGoalSchema),
+  // })
+
   return (
     <DialogContent>
       <div className=" flex flex-col gap-4 h-full">
@@ -107,6 +130,7 @@ export function CreateGoal() {
                 Fechar
               </Button>
             </DialogClose>
+
             <Button className="flex-1">Salvar</Button>
           </div>
         </form>
