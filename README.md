@@ -26,6 +26,9 @@ Esse é um projeto que ajuda a gerenciar suas metas pessoais de forma simples e 
     POST /Goal:
         ➕ Permite ao usuário adicionar novas metas.
         Aceita um título e frequência desejada por semana para cada nova meta.
+        
+    POST /GoalCompletion:
+        ✅ Permite o usuário completar uma meta.
 
 ### Frontend
 
