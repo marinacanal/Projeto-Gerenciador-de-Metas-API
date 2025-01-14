@@ -7,12 +7,6 @@ Esse é um projeto que ajuda a gerenciar suas metas pessoais de forma simples e 
     Node.js: 🟩 Ambiente de execução para JavaScript no lado do servidor.
     TypeScript: 🟨 Superset do JavaScript, com tipagem estática para maior segurança.
 
-### Frontend
-
-    React: ⚛️ Biblioteca JavaScript para criar interfaces de usuário reativas e dinâmicas.
-    TypeScript: 🟨 Para garantir um código mais robusto e seguro no frontend.
-
-
 ## ✅ Funcionalidades Implementadas
 ### Backend
 
@@ -29,15 +23,3 @@ Esse é um projeto que ajuda a gerenciar suas metas pessoais de forma simples e 
         
     POST /GoalCompletion:
         ✅ Permite o usuário completar uma meta.
-
-### Frontend
-
-    Interface de Usuário:
-        🖥 Visualize suas metas pendentes.
-        📊 Confira o resumo semanal.
-        
-
-## 🚧 Em Andamento
-### Frontend
-    Funcionalidade:
-      ➕ Adicione novas metas facilmente.
